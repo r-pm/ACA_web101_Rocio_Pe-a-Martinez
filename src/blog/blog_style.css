@@ -1,0 +1,26 @@
+body { background-color: grey;
+
+}
+
+.black-text {
+    color: black
+}
+
+.white-text {
+    border-style: solid;
+    outline-width: 1px;
+    text-align: right;
+    color: red
+}
+
+nav {
+    important!
+    border-style: solid;
+    outline-width: 1px;
+    text-align: right;
+}
+
+.main-chunk {
+    
+
+}

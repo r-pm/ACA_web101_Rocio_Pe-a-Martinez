@@ -1,26 +1,64 @@
-body { background-color: grey;
+body { 
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.black-text {
-    color: black
-}
-
-.white-text {
+header {
     border-style: solid;
-    outline-width: 1px;
+    border-width: thin;
+    border-color: black;
     text-align: right;
-    color: red
+    color:white;
+    word-spacing: 10pt;
+    background-color: #0b3e99;
+   
 }
 
 nav {
-    important!
     border-style: solid;
-    outline-width: 1px;
+    border-width: thin;
+    border-color: black;
     text-align: right;
+    color: black;
+    word-spacing: 10pt;
+    background-color: whitesmoke;
+ /* all nav bar same props except COURSES has dropdown & APPLY NOW bkgr color */
+
+}
+img {
+    align-items: left;
+ /*how do you hook imgs from html?*/
+}
+.apply-now {
+    color: white;
+    background-color: orange;
 }
 
-.main-chunk {
-    
+main {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+/*is width on?*/
+}
 
+section {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    text-align: left;
+}
+   
+footer {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    text-align: center;
+    color: orange;
+    word-spacing: 10pt;
+    background-color: whitesmoke;
 }

@@ -1,9 +1,9 @@
 body {
-   font-family: Arial, Helvetica, sans-serif; 
+   font-family: 'Work Sans';sans-serif; 
    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
    background-repeat: no-repeat;
    background-size: 1600px 1000px;
-   background-color: lavenderblush;
+   background-color:#d79922;
    width: 100vw;
    height: 100vh;
  }
@@ -32,13 +32,12 @@ body {
    height: 10%;
    width: 15%;
    color: black;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 20px;
-   border-radius: 25px;
+   font-size: small;
+   border-radius: auto;
    background: transparent;
    padding: 20px;
    text-align: center;
-   border: 2px solid white;
+   border: 2px solid;
  }
 
  .has-border {
@@ -63,17 +62,18 @@ body {
    grid-column: 2/3;
  }
 
- h1 {
+ h2 {
    color: black;
-   grid-column: 2/3;
+  font-size: larger;   
+  grid-column: 2/3;
    margin: 3% auto;
    border-bottom: 2px solid #1940A9;;
  }
 
- h2 {
+ h1 {
    grid-column: 2/3;
    margin: 3% auto;
-   font-style: italic;
+   font-size: x-large;
  }
 
  .small-text {
@@ -88,10 +88,9 @@ body {
    margin: 3% auto;
    width: 70%;
    height: 15%;
-   font-family: Arial, Helvetica, sans-serif;
    font-size: 20px;
    border-radius: 25px;
-   background: lawngreen;
+   background: #4056A1;
    padding: 20px;
    padding-bottom: 5%;
    text-align: center;

@@ -1,5 +1,7 @@
 body {
-   font-family: 'Work Sans';sans-serif; 
+   font-family: 'Work Sans'sans-serif; 
+   color:#1940A9;
+   font-size: small;
    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
    background-repeat: no-repeat;
    background-size: 1600px 1000px;
@@ -27,12 +29,11 @@ body {
    grid-template-columns: 30% 40% 30%;
  }
 
+ /* nav bar header */
  nav > a {
    margin: 2% 1% 3%;
    height: 10%;
    width: 15%;
-   color: black;
-   font-size: small;
    border-radius: auto;
    background: transparent;
    padding: 20px;
@@ -42,7 +43,7 @@ body {
 
  .has-border {
    border-radius: 25px;
-   border: 2px solid #0795C3;
+   border: 2px solid;
    background: none;
    padding: 20px;
  }
@@ -57,23 +58,23 @@ body {
  #profile-pic {
    width: 300px;
    height: 300px;
-   border-radius: 50%;
+   border-radius: 55%;
    margin: 15% auto;
    grid-column: 2/3;
  }
 
+ /* student of */
  h2 {
-   color: black;
-  font-size: larger;   
   grid-column: 2/3;
    margin: 3% auto;
    border-bottom: 2px solid #1940A9;;
  }
 
+ /* rocio pena martinez */
  h1 {
    grid-column: 2/3;
    margin: 3% auto;
-   font-size: x-large;
+
  }
 
  .small-text {

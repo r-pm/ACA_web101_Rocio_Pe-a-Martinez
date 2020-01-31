@@ -1,0 +1,9 @@
+body {
+  background-color: lavenderblush;
+  background-image: url(./backgroundimg.png);
+  display: grid;
+  grid-template-columns: 7fr;
+  grid-template-rows: 9fr;
+}
+
+section

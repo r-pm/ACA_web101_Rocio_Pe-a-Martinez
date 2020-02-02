@@ -6,13 +6,20 @@
   <title>nasa</title>
   <link rel="stylessheet" href="./reset.css">
   <link rel="stylesheet" href="./nasa.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');  
+  </style>
 </head>
 
 <body>
-  <header>NASA</header>
+  <div>NASA
+  </div>
+  <!-- div = header container w/ img & title -->
   <main>
-    <section class="social">SOCIAL
-      <ul>
+    <section class="social">
+      <h3 id="socialtitle">SOCIAL</h3>
+
+      <ul id="sociallist">
         <li>Twitter</li>
         <li>Facebook</li>
         <li>Instagram</li>
@@ -20,21 +27,22 @@
       </ul>
 
     </section>
-    <section class="office">OFFICE
-      <ul>
-        <li class=""></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+    <section class="office">
+      <h3>OFFICE</h3>
+      <ul class="officeinfo">
+        <li id="locationtitle">Public Communications Office</li>
+        <li id="hq">NASA Headquartes</li>
+        <li id="streetnumb">300 E. Street SW Suite 5R30</li>
+        <li id="street">Washington, DC 20546</li>
+        <li id="phoneoffice>">(202) 358-0001 (Office)</li>
+        <li id="fax>">(202) 358-4338 (Fax)</li>
       </ul>
-
     </section>
-    <section class="contact">CONTACT
-      <input id="name">Name </input>
-      <input id="message">Message </input>
-      <button>send</button>
+    <section class="contact">
+      <h3>CONTACT</h3>
+      <input id="inputname">Name </input>
+      <input id="inputmessage">Message </input>
+      <button id="buttonsend">send</button>
     </section>
   </main>
   

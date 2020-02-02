@@ -1,4 +1,4 @@
-.calculator-flex {
+/* .calculator-flex {
   display: flex;
   flex-direction: row;
 }
@@ -13,9 +13,9 @@
 
 .button-content {
 
-}
+} */
 
-/* 
+
   .calculator-flex {
   border: 1px solid black;
   height: 500px;
@@ -73,4 +73,4 @@ header .nav ul {
   width: 400px;
   display: flex;
   justify-content: space-evenly;
-} */
+}

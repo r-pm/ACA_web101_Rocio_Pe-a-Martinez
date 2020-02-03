@@ -14,8 +14,13 @@ div {
   background-image: url(./galaxy.png); 
   /* want this img fit into header container
   ended up using div + set body container h&w to 100% */
+  text-align: center;  /* need to justify & align text for child elem of flex container */
+}
+
+#nasatitle {
   color: white;
-  /* need to justify & align text for child elem of flex container */
+  margin: 13%;
+  font-size: 145px;
 }
 
 main{

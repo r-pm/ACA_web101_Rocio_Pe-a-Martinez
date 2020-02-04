@@ -1,0 +1,97 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  background-color: gray;
+}
+
+aside {
+  grid-area: 1/1/-1/2;
+  background-color: black;
+  color: white;
+  display: grid;
+}
+  #dash {
+    grid-column: inherit;
+    grid-row: 2/3;
+  }
+  #ui {
+    grid-column: inherit;
+    grid-row: 3/4;
+  }
+  #cal {
+    grid-column: inherit;
+    grid-row: 4/5;
+  }
+  #mail {
+    grid-column: inherit;
+    grid-row: 5/6;
+  }
+  #comp {
+    grid-row: 6/7;
+  }
+  #widgets {
+    grid-row: 7/8;
+  }
+  #tables {
+    grid-row: 8/9;
+  }
+
+header {
+  grid-area: 1/2/2/-1;
+  background-color: fuchsia;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+  #upperrighticons {
+    display: flex;
+    justify-content: space-evenly;
+    /* is the div only as big as the content? cause then this does nada & i want a lil space */
+  }
+
+main {
+  grid-area: 3/2/4/-1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+  .maindivs {
+    border: 3px black solid;
+  }
+  #totalorders {
+    background-color: blue;
+  }
+  #totalexpenses {
+    background-color: gold;
+  }
+  #totalrevenue {
+    background-color: green;
+  }
+
+footer {
+  grid-area: 5/2/-1/-1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+  .graphdivs {
+    background-color: whitesmoke;
+    border: 3px grey solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #productsales {
+    background-image: url(./productSales.png);
+    width: 60%;
+    height: 100%;
+  }
+  #topselling {
+    background-image: url(./topSelling.png);
+    width: 40%;
+    height: 100%;
+  }

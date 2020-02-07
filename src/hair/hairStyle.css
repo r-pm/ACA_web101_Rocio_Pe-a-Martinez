@@ -22,3 +22,14 @@ aside {
     background-color: lightblue;
     color: white;
   }
+
+
+
+
+
+  @media (min-width: 768px) {
+    .logoimg {
+      max-width: 320;
+      max-height: 275.89;
+    }
+  }

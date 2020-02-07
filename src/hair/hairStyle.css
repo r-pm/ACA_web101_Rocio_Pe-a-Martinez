@@ -13,10 +13,13 @@ aside {
 }
   .logoimg {
     max-width: 320px;
-    max-height: 276px;
+    max-height: 186px;
     grid-column: 1/-1;
     grid-row: 1/5;
-    background-image: url(./bettylogo.png);
+    background-image: url(./img/bettylogo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     /* need to set max heights/widths for img in diff screens */
   }
   #buttonbook {
@@ -28,7 +31,6 @@ aside {
 
   @media (min-width: 768px) {
     .logoimg {
-      max-width: 320px;
-      max-height: 275.89px;
+      max-height: 276px;
     }
   }

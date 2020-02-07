@@ -12,6 +12,8 @@ aside {
   grid-template-rows: inherit;
 }
   .logoimg {
+    max-width: 320px;
+    max-height: 276px;
     grid-column: 1/-1;
     grid-row: 1/5;
     background-image: url(./bettylogo.png);
@@ -24,12 +26,9 @@ aside {
   }
 
 
-
-
-
   @media (min-width: 768px) {
     .logoimg {
-      max-width: 320;
-      max-height: 275.89;
+      max-width: 320px;
+      max-height: 275.89px;
     }
   }

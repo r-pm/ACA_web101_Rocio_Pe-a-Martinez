@@ -1,33 +1,84 @@
 body {
-  display: grid;
-  grid-template-columns:120px repeat(7, 2fr);
-  grid-template-rows: 300px repeat(11, 1fr);
   height: 100vh;
+  width: 100vw;
+  background-image: url(./img/mainbackgroundimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* how do i know when to do vh vs %? */
+  display: grid;
+  grid-template-columns:200px repeat(5, 2fr);
+  grid-template-rows: 200px repeat(9, 1fr);
 }
 
 aside {
-  grid-area: 1/1/-1/3;
+  grid-area: 1/1/-1/2;
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: 200px;
   grid-template-rows: inherit;
+  /* background-color: rgb(73, 72, 71); 
+  here i learned cant have bg-color & bkg rgba regardless of order*/
+  background:rgba(251,249,244,0.9);
 }
   .logoimg {
-    max-width: 320px;
+    max-width: 200px;
     max-height: 186px;
     grid-column: 1/-1;
-    grid-row: 1/5;
+    grid-row: 1/2;
     background-image: url(./img/bettylogo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     /* need to set max heights/widths for img in diff screens */
   }
+  /* um could i have done this easier? tried to grid w.o assigning ea id but they shifted */
+  .navabout {
+    grid-row: 2/3;
+  }
+  .navmeet {
+    grid-row: 3/4;
+  }
+  .navservices {
+    grid-row: 4/5;
+  }
+  .navbootcamp {
+    grid-row: 5/6;
+  }
+  .navproducts {
+    grid-row: 6/7;
+  }
+  .navlatest {
+    grid-row: 7/8;
+  }
+  .navgiftcards {
+    grid-row: 8/9;
+  }
+  .navcontact {
+    grid-row: 9/10;
+  }
   #buttonbook {
-    grid-row: 14/-1;
+    grid-row: 10/-1;
     background-color: lightblue;
     color: white;
   }
 
+header {
+  grid-area:1/2/2/-1;
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 200px;
+  
+
+}  
+
+  #headerblurb {
+    grid-column: 2/5;
+    background: rgba(251,249,244,0.9);
+    font-size: 24px;
+  }
+
+main {
+  grid-area: 2/3/9/-1;
+}
 
   @media (min-width: 768px) {
     .logoimg {

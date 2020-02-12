@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo|Shrikhand&display=swap');
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+  color: white;
+}
+.navportfolio {
+  clip-path: circle(40%);
+  grid-area: 1/2/2/-1;
+  font-family: 'Shrikhand', cursive;
+  font-size: xx-large;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  /* want floatingPortfolio text centered over video
+  displaying flex for now */
+  
+}
+  /* .floatingContainer {
+
+    /* position: relative;
+    text-align: center;
+  }
+  /* floatcontainer & video elem seem to be same sz
+  so what do i want absolute positioning refer to? nav or vid?
+  how does the positioning work
+  .floatingPortfolio {
+    /* background: rgba(0, 0, 0, .1);
+    position: absolute
+  
+  } */
+
+  .floatingPortfolio {
+    padding-bottom: 31px;
+  }
+
+.navmenu {
+  grid-area: 2/1/-1/3;
+  font-family: 'Archivo', sans-serif; 
+  border: solid 3px red
+
+}
+
+
+
+/* went back and tried 
+setting div container & floatingPortfolio text background to transparent
+showed the black body background ... 
+so vid must not count as a background
+
+instead set nav parent display to flex
+and positioned floatingPortfolio text 
+where it's barely vis using bottom padding*/

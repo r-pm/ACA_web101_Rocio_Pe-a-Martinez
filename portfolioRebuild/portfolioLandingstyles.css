@@ -6,53 +6,83 @@ body {
   grid-template-rows: 1fr 1fr;
   background-color: black;
   color: white;
+  padding: 126px;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .navportfolio {
-  clip-path: circle(40%);
+  clip-path: circle(33%);
   grid-area: 1/2/2/-1;
   font-family: 'Shrikhand', cursive;
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bold;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   /* want floatingPortfolio text centered over video
-  displaying flex for now */
-  
+  displaying flex for now */ 
 }
-  /* .floatingContainer {
 
-    /* position: relative;
-    text-align: center;
-  }
-  /* floatcontainer & video elem seem to be same sz
-  so what do i want absolute positioning refer to? nav or vid?
-  how does the positioning work
-  .floatingPortfolio {
-    /* background: rgba(0, 0, 0, .1);
-    position: absolute
-  
-  } */
-
-  .floatingPortfolio {
+  p {
     padding-bottom: 31px;
+    /* revist: need the padding to hold up p in the div 
+    without collapsing nav circle ... but y? maybe get rid of div container? */
   }
 
 .navmenu {
   grid-area: 2/1/-1/3;
   font-family: 'Archivo', sans-serif; 
-  border: solid 3px red
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+/* to compensate for extra padding from vid clipping */
+}
+  #aboutLink {
+    font-weight: 900;
+  }
+  #resumeLink {
+    font-weight: 700;
+  }
+  #blogLink {
+    font-weight: 500;
+  }
+  #contactLink {
+    font-weight: 200;
+  }
+
+@media only screen and (min-width: 768px) {
+  .navportfolio {
+    grid-area: 1/2/-1/-1;
+    ;
+  }
+  .navmenu {
+    grid-area: 1/1/-1/2;
+  }
+  p {
+    font-size: 37px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 46px;
+    padding-bottom: 113px;
+  }
 
 }
 
-
-
-/* went back and tried 
-setting div container & floatingPortfolio text background to transparent
+/*
+tried to get p text to float over video using position absolute 
+& position relative on it's container div
+tried setting div container & floatingPortfolio text background to transparent
 showed the black body background ... 
 so vid must not count as a background
 
 instead set nav parent display to flex
-and positioned floatingPortfolio text 
+and positioned p text 
 where it's barely vis using bottom padding*/

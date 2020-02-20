@@ -1,0 +1,15 @@
+.expand-about {
+  animation: expand-about 1s 1;
+}
+/* upon pg loading i want each menu nav to slide in w/ some subtle anim
+once in place, i want about to 
+bounce 
+and expand to reveal about me text
+*/
+@keyframes .expand-about {
+  0%
+
+  50%
+
+  100% 
+}

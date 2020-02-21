@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+/*  flex settings affecting div & main */
+}
+
+div {
+  height: 58%;
+  width: 100%;
+  margin-bottom: 10px;
+  background-image: url(./galaxy.png); 
+  /* want this img fit into header container
+  ended up using div + set body container h&w to 100% */
+  text-align: center;  /* need to justify & align text for child elem of flex container */
+}
+
+#nasatitle {
+  color: white;
+  margin: 13%;
+  font-size: 145px;
+}
+
+main{
+  height:42%;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #dfd4d4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* text-justify: inter-word; */
+/*  flex settings affecting all sections social office & contact
+*/
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.office {
+  display: flex;
+  flex-direction: column;
+
+}  
+
+.officeinfo {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#buttonsend {
+  background-color: grey;
+}

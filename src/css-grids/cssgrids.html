@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./cssgridsStyles.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>Widget Dashboard</title>
+</head>
+
+    <body> 
+    <!-- will hold total grid -->
+        <section id="clock">
+            <!--stolen clock code-->
+            <input type="time" id="clock" value="12:12:12">
+            <script>
+                let time = {
+                hours: 24,
+                minutes: 59,
+                seconds: 58 
+                }
+                let t;
+                let custom_input = document.getElementById("clock");
+
+                custom_input.addEventListener("focus", stopTime);
+                custom_input.addEventListener("focusout", startTime);
+
+                function stopTime() {
+                clearTimeout(t);
+                }
+
+                function startTime() {
+                let arrTime = custom_input.value.split(':');
+                
+                time.hours = arrTime[0];
+                time.minutes = arrTime[1];
+                time.seconds = arrTime[2];
+                
+                clock();
+                }
+
+                function checkSeconds(seconds) {
+                let parsedSeconds = Number(seconds);
+                
+                if (parsedSeconds >= 60) {
+                    time.seconds = "0" + 1;
+                    
+                    time.minutes++;
+                    
+                } else if (parsedSeconds < 10) {
+                    time.seconds = "0" + parsedSeconds;
+                }
+                
+                checkMinutes(time.minutes)
+                }
+
+                function checkMinutes(minutes) {
+                let parsedMinutes = Number(minutes);
+                
+                if (parsedMinutes >= 60) {
+                    time.minutes = "00";
+                    time.hours++;
+                } else if (parsedMinutes < 10) {
+                    time.minutes = "0" + parsedMinutes;
+                }
+                
+                checkHours(time.hours)
+                }
+
+                function checkHours(hours) {
+                let parsedHours = Number(hours);
+
+                if (parsedHours > 24) {
+                    time.hours = "00"
+                } else if (parsedHours < 10) {
+                    time.hours = "0" + parsedHours;
+                }
+                }
+
+                function clock() {
+                time.seconds++;
+
+                checkSeconds(time.seconds);
+
+                document.getElementById("clock").innerHTML = (time.hours + ":" + time.minutes + ":" + time.seconds);
+                
+                custom_input.value = time.hours + ":" + time.minutes + ":" + time.seconds;
+                
+                t = setTimeout('clock()', 1000); 
+                }
+
+                clock();
+            </script>
+        </section>
+        <section id="greeting">Hello, Rocio!
+        </section>
+        <!-- greeting https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input --> 
+        <main id="calendar">
+        <!-- stolen calendar code -->
+            <div class="calendar">
+            <h1 class="calendar__header">Sun</h1>
+            <h1 class="calendar__header">Mon</h1>
+            <h1 class="calendar__header">Tue</h1>
+            <h1 class="calendar__header">Wed</h1>
+            <h1 class="calendar__header">Thu</h1>
+            <h1 class="calendar__header">Fri</h1>
+            <h1 class="calendar__header">Sat</h1>
+            <div class="calendar__day false">1</div>
+            <div class="calendar__day false">2</div>
+            <div class="calendar__day false">3</div>
+            <div class="calendar__day calendar__day--today">4</div>
+            <div class="calendar__day false">5</div>
+            <div class="calendar__day false">6</div>
+            <div class="calendar__day false">7</div>
+            <div class="calendar__day false">8</div>
+            <div class="calendar__day false">9</div>
+            <div class="calendar__day false">10</div>
+            <div class="calendar__day false">11</div>
+            <div class="calendar__day false">12</div>
+            <div class="calendar__day false">13</div>
+            <div class="calendar__day false">14</div>
+            <div class="calendar__day false">15</div>
+            <div class="calendar__day false">16</div>
+            <div class="calendar__day false">17</div>
+            <div class="calendar__day false">18</div>
+            <div class="calendar__day false">19</div>
+            <div class="calendar__day false">20</div>
+            <div class="calendar__day false">21</div>
+            <div class="calendar__day false">22</div>
+            <div class="calendar__day false">23</div>
+            <div class="calendar__day false">24</div>
+            <div class="calendar__day false">25</div>
+            <div class="calendar__day false">26</div>
+            <div class="calendar__day false">27</div>
+            <div class="calendar__day false">28</div>
+            <div class="calendar__day false">29</div>
+            <div class="calendar__day false">30</div>
+            </div>
+        </main>
+        <section id="calculator">
+            <!-- calc -->
+        </section>
+        <input id="todo">To Do <br>
+        1. Finish the thing<br>
+        2. Review the thing<br>
+        <!-- to do -->
+
+    </body>
+</html>

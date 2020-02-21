@@ -56,12 +56,13 @@ a {
   }
  
   .textContainer:hover .appearingText {
-    visibility: visible;
+    display: block;
   }
 
   .appearingText {
-    visibility: hidden;
+    display: none;
     font-size: 20px;
+
   }
 
   @keyframes bounce {
@@ -74,14 +75,6 @@ a {
   .bounce {
     animation: bounce 5s infinite;
   }
-
-
-
-  /*
-  upon pg loading i want each menu nav to slide in w/ some subtle anim
-  once in place, i want about to 
-  bounce 
-  and expand to reveal about me text */
 
 @media only screen and (min-width: 768px) {
   .navportfolio {

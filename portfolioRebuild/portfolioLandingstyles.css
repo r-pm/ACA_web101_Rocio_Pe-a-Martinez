@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo|Shrikhand&display=swap');
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+  color: white;
+  padding: 126px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navportfolio {
+  clip-path: circle(33%);
+  grid-area: 1/2/2/-1;
+  font-family: 'Shrikhand', cursive;
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  /* want floatingPortfolio text centered over video
+  displaying flex for now */ 
+}
+
+  p {
+    padding-bottom: 31px;
+    /* revist: need the padding to hold up p in the div 
+    without collapsing nav circle ... but y? maybe get rid of div container? */
+  }
+
+.navmenu {
+  grid-area: 2/1/-1/3;
+  font-family: 'Archivo', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+/* to compensate for extra padding from vid clipping */
+}
+  #aboutLink {
+    font-weight: 900;
+  }
+  #resumeLink {
+    font-weight: 700;
+  }
+  #blogLink {
+    font-weight: 500;
+  }
+  #contactLink {
+    font-weight: 200;
+  }
+
+@media only screen and (min-width: 768px) {
+  .navportfolio {
+    grid-area: 1/2/-1/-1;
+    ;
+  }
+  .navmenu {
+    grid-area: 1/1/-1/2;
+  }
+  p {
+    font-size: 37px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 46px;
+    padding-bottom: 113px;
+  }
+
+}
+
+/*
+tried to get p text to float over video using position absolute 
+& position relative on it's container div
+tried setting div container & floatingPortfolio text background to transparent
+showed the black body background ... 
+so vid must not count as a background
+
+instead set nav parent display to flex
+and positioned p text 
+where it's barely vis using bottom padding*/

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.mainContainer {
+  border: 2px solid red;
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  border: 1px solid green;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  nav div.logo {
+    border: 1px solid red;
+  }
+
+  nav ul {
+    
+  }
+
+main {
+  border: 1px solid pink;
+  flex: 1;
+}
+
+footer {
+  border: 1px solid blue;
+  height: 50px;
+}

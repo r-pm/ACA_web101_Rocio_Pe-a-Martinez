@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./img/mainbackgroundimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* how do i know when to do vh vs %? */
+  display: grid;
+  grid-template-columns:200px repeat(5, 2fr);
+  grid-template-rows: 200px repeat(9, 1fr);
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+aside {
+  grid-area: 1/1/-1/2;
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: inherit;
+  /* background-color: rgb(73, 72, 71); 
+  here i learned cant have bg-color & bkg rgba regardless of order*/
+  background:rgba(251,249,244,0.9);
+}
+  .logoimg {
+    max-width: 200px;
+    max-height: 186px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-image: url(./img/bettylogo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* need to set max heights/widths for img in diff screens */
+  }
+  /* um could i have done this easier? tried to grid w.o assigning ea id but they shifted */
+  .navabout {
+    grid-row: 2/3;
+  }
+  .navmeet {
+    grid-row: 3/4;
+  }
+  .navservices {
+    grid-row: 4/5;
+  }
+  .navbootcamp {
+    grid-row: 5/6;
+  }
+  .navproducts {
+    grid-row: 6/7;
+  }
+  .navlatest {
+    grid-row: 7/8;
+  }
+  .navgiftcards {
+    grid-row: 8/9;
+  }
+  .navcontact {
+    grid-row: 9/10;
+  }
+  #buttonbook {
+    grid-row: 10/-1;
+    background-color: lightblue;
+    color: white;
+  }
+
+header {
+  grid-area:1/2/2/-1;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}  
+
+  #headerblurb {
+    background: rgba(251,249,244,0.9);
+    font-size: 24px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 17%;
+    margin-left: 17%;
+    padding: 3%;
+    }
+
+main {
+  grid-area: 2/2/7/-1;
+  background: rgba(251,249,244,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+  .buttonlocation {
+    background-color: turquoise;
+    font-family: 'Josefin Sans', sans-serif !important;
+  }
+
+footer {
+  grid-area: 8/2/-1/-1;
+  background: rgba(251,249,244,0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+@media (max-width: 990px) {
+  aside {
+    display: none;
+  }
+  header {
+    grid-area:1/1/2/-1;
+  }
+  main {
+    grid-area: 2/1/7/-1;
+  }
+  footer {
+    grid-area: 8/1/-1/-1;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    display: none;
+  }
+
+  body {
+    font-size: smaller !important;
+  }
+
+  .logoimg {
+    grid-area: 1/1/2/-1;
+  }
+  /* is this not showing cause it's part of hidden aside? */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+  }
+}

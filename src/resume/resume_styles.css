@@ -1,0 +1,54 @@
+
+body {
+    background-color: grey;
+    margin:0;
+    height:700px;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    height: 6em;
+    background-color: black;
+}
+
+header > div {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    
+}
+
+aside {
+    height:100%;
+    width: 25%;
+    float: left;
+    margin: none;
+    background-color: teal;
+    color:white;
+    text-align: center;
+    /* in order to get the two floaters to touch i removed margins
+    float makes elements into block AND adds double margin */
+    
+}
+
+ aside > img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* the above centers the img inserted on all sides, makes it a block */
+    width: 75%;
+} 
+
+main {
+    height:100%;
+    width: 75%;
+    float: right;
+    text-align: center;
+    background-color: grey;
+}
+

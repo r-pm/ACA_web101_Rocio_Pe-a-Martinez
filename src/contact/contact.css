@@ -26,4 +26,6 @@ body {
 
 .footerContactForm {
   grid-area: 6/1/-1/-1;
+  border: 2px solid red
+
 }

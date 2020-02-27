@@ -1,0 +1,29 @@
+.main-container.red {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+  display: flex;
+  direction: column;
+  justify-content: center;
+}
+
+.board {
+  border: 2px solid black;
+  display: flex;
+  direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.click-box {
+  height: 100%;
+  width: 100%;
+  border: 1px solid blueviolet;
+}

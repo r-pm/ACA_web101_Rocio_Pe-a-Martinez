@@ -7,19 +7,19 @@ body{
 }
 
   .body-container {
-    padding: 30px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
       /* could take out flex & have same mobile layout? am scurred */
   }
 
-  #big-medium-title {
+  h1 {
     font-size: x-large;
   }
 
 header {
-  padding-bottom: 15px;
+  padding-bottom: 40px;
 }
   #header-links {
     display: flex;
@@ -42,7 +42,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
 }
   #our-mission {
     padding-bottom: 20px;
@@ -52,7 +52,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 
 .section-our-team {
@@ -60,7 +60,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 15px;
+  padding: 20px;
   }
   .section-container-our-team {
     display: flex;
@@ -74,10 +74,12 @@ main {
     }
 
 footer {
+  border-top: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 15px;
+  padding: 40px 40px;
+
 }
   .footer-section {
     padding-bottom: 20px;

@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 body{
-  padding: 30px;
-  font-family: 'Source Sans Pro', ;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Source Sans Pro', Helvetica,Arial,sans-serif,monospace;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 3fr 4fr 3fr 1fr;
+  padding: 30px;
 }
 
-a {
-  text-decoration: none;
-  color:black;
-  padding: 15px;
-}
-
+/* used for marking bold */
 span {
   font-weight: bold;
 }
 
+/* big medium title only */
 h1 {
   font-size: x-large;
+}
+
+header {
+  grid-area: 1/1/4/-1;
 }
 
 #header-row {
@@ -30,3 +32,9 @@ h1 {
   padding: 20px;
 
 }
+  /* nav links in header row */
+  a {
+    text-decoration: none;
+    color:black;
+    padding: 15px;
+  }

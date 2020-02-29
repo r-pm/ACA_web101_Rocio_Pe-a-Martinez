@@ -8,6 +8,13 @@ body{
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
+  animation-name: background-color;
+  animation-duration: 3s;
+}
+
+@keyframes background-color {
+  from {background-color: lightskyblue;}
+  to {background-color: white;}
 }
 
 a {
@@ -52,7 +59,10 @@ main {
   .main-spacer {
     padding: 20px 20px;
   }
-  
+  button:hover {
+    background-color: lightblue;
+    animation-play-state: paused;
+  }
 footer {
   border-top: 2px solid black;
   display: flex;

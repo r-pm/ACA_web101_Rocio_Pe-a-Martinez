@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 body{
-  padding: 30px;
+  width: 100%;
+  height: 100%;
   font-family: 'Source Sans Pro', Helvetica,Arial,sans-serif,monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 a {
@@ -39,8 +44,16 @@ h1 {
     padding: 20px;
   }
 
+  iframe {
+    padding: 20px;
+    border-top: 2px solid black;
+    align-self: center;
+  }
+
   footer {
     padding: 20px;
+    border-top: 2px solid black;
+
   }
     .footer-section {
       padding-bottom: 20px;
@@ -58,6 +71,7 @@ h1 {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
   }
   i {
     padding-right: 15px;

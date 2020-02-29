@@ -59,6 +59,7 @@ main {
   .main-spacer {
     padding: 20px 20px;
   }
+ 
   button:hover {
     background-color: lightblue;
     animation-play-state: paused;
